@@ -5,33 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research | Mordecai Ohemeng</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; margin: 0; padding: 40px; background: #fff; color: #333; }
-        .container { max-width: 800px; margin: auto; }
-        h1 { border-bottom: 2px solid #007bff; padding-bottom: 10px; }
-        .paper { margin-bottom: 30px; padding: 15px; border-left: 4px solid #eee; }
-        .paper:hover { border-left-color: #007bff; background: #f9f9f9; }
-        .tag { background: #e0e0e0; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; }
-        a { color: #007bff; text-decoration: none; font-weight: bold; }
-        .back-home { display: inline-block; margin-bottom: 20px; }
+        body { font-family: -apple-system, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; }
+        nav { padding: 1.2rem 10%; border-bottom: 1px solid #eee; }
+        nav a { text-decoration: none; color: #666; font-weight: bold; margin-right: 20px; }
+        .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+        
+        h1 { font-size: 2.5rem; }
+        h2 { color: #007bff; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 40px; }
+        
+        .project { margin-bottom: 30px; }
+        .project h3 { margin-bottom: 5px; }
+        .links { margin-top: 10px; }
+        .btn { 
+            display: inline-block;
+            padding: 5px 12px;
+            background: #f0f0f0;
+            color: #333;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            margin-right: 10px;
+        }
+        .btn:hover { background: #007bff; color: white; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <a href="index.html" class="back-home">← Back to Home</a>
-        <h1>My Research</h1>
-        
-        <div class="paper">
-            <h3>Title of Your First Paper or Project</h3>
-            <p><span class="tag">Topic</span> | <span class="tag">2026</span></p>
-            <p>A brief summary of what you discovered or built during this research project. Mention your methodology or key findings here.</p>
-            <a href="#">Read Full Paper (PDF)</a>
-        </div>
 
-        <div class="paper">
-            <h3>Another Research Interest</h3>
-            <p><span class="tag">AI</span> | <span class="tag">In Progress</span></p>
-            <p>Description of what you are currently investigating.</p>
-        </div>
+    <nav>
+        <a href="index.html">← Home</a>
+        <a href="index.html">Bio</a>
+    </nav>
+
+    <div class="container">
+        <h1>Research</h1>
+
+        <!-- Group 1: Security -->
+        <section>
+            <h2>Cyber-Physical Systems Security</h2>
+            <div class="project">
+                <h3>Early Ransomware Detection Using MHSA-LSTM</h3>
+                <p>Developing an intelligent sensing framework for early detection of ransomware in industrial control systems.</p>
+                <div class="links">
+                    <!-- Link to the PDF you uploaded -->
+                    <a href="ransomware_detection.pdf" class="btn" target="_blank">PDF</a>
+                    <a href="https://doi.org/10.3390/s24041180" class="btn" target="_blank">Journal Link</a>
+                </div>
+            </div>
+
+            <div class="project">
+                <h3>Blockchain-Augmented CPS Framework</h3>
+                <p>Mitigating FDI attacks and improving resiliency in power grid operations via blockchain synchronization.</p>
+                <div class="links">
+                    <a href="blockchain_cps.pdf" class="btn" target="_blank">PDF</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Group 2: Computational Biology -->
+        <section>
+            <h2>Computational Biology</h2>
+            <div class="project">
+                <h3>Poly-infection Modeling (COVID-19 & Pneumonia)</h3>
+                <p>Mathematical modeling of infectious disease dynamics and public health implications.</p>
+                <div class="links">
+                    <a href="poly_infection_poster.pdf" class="btn" target="_blank">View Poster</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Group 3: Mathematical Physics -->
+        <section>
+            <h2>Mathematical Physics & Solitons</h2>
+            <div class="project">
+                <h3>Numerical Analysis of the sine-Gordon Equation</h3>
+                <p>Exploring soliton solutions and wave propagation dynamics in non-linear systems.</p>
+                <div class="links">
+                    <a href="soliton_research.pdf" class="btn" target="_blank">Abstract</a>
+                </div>
+            </div>
+        </section>
+
     </div>
 </body>
 </html>
