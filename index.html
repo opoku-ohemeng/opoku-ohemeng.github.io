@@ -3,50 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Site</title>
+    <title>Mordecai Ohemeng | Research & Development</title>
+    
+    <!-- Academicons for professional Google Scholar and GitHub icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <!-- Font Awesome for other social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <style>
-        /* This is CSS - it makes your site look pretty! */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
+            color: #333;
             margin: 0;
+            background-color: #ffffff;
+        }
+
+        /* Top Navigation Bar */
+        nav {
+            background-color: #ffffff;
+            padding: 1.2rem 10%;
+            border-bottom: 1px solid #eaeaea;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            min-height: 100vh;
-            background-color: #f4f4f9;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
-        .container {
-            max-width: 600px;
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        h1 { color: #333; }
-        p { color: #666; }
-        .links a {
-            margin: 0 10px;
+
+        nav .logo {
+            font-weight: 700;
+            font-size: 1.3rem;
+            color: #000;
             text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        nav .nav-links a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #666;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav .nav-links a:hover {
             color: #007bff;
-            font-weight: bold;
+        }
+
+        /* Main Content Container */
+        .main-container {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 30px;
+        }
+
+        /* Profile Grid (Image Left, Bio Right) */
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        /* Responsive design for phones */
+        @media (max-width: 768px) {
+            .profile-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .photo-area {
+                margin: 0 auto;
+                max-width: 250px;
+            }
+        }
+
+        .profile-photo {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            display: block;
+        }
+
+        .bio h1 {
+            margin-top: 0;
+            font-size: 2.5rem;
+            color: #111;
+            margin-bottom: 15px;
+        }
+
+        .bio p {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        /* Social Icons Section */
+        .social-links {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            font-size: 1.8rem;
+            color: #444;
+            text-decoration: none;
+            transition: transform 0.2s, color 0.2s;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+            transform: translateY(-3px);
+        }
+
+        .social-label {
+            display: block;
+            font-size: 0.7rem;
+            text-align: center;
+            margin-top: 5px;
+            color: #888;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 120px;
+            padding: 40px 0;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+            color: #999;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Hi, I'm Mordecai Ohemeng 👋</h1>
-        <p>I'm a researcher and a creator/developer/human building things on the web.</p>
-        
-        <div class="links">
-            <a href="https://github.com/opoku-ohemeng">GitHub</a>
-            <a href="https://linkedin.com/in/mordecai-opoku-ohemeng-2958a8b9">LinkedIn</a>
-            <a href="https://scholar.google.com/citations?user=ssnIf9MAAAAJ&hl=en" target="_blank">Google Scholar</a>
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="index.html" class="logo">Mordecai Ohemeng</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
             <a href="mailto:moohemeng@gmail.com">Contact</a>
-            <img src="IMG_2508.PNG" alt="My Profile Picture" style="width:150px; border-radius:50%;">
-            "<a href="research.html">My Research</a>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <!-- Profile Section -->
+        <div class="profile-grid">
+            
+            <!-- Left Column: Photo -->
+            <div class="photo-area">
+                <!-- Ensure IMG_2508.PNG is uploaded to your repo exactly with this name -->
+                <img src="IMG_2508.PNG" alt="Mordecai Ohemeng" class="profile-photo">
+            </div>
+
+            <!-- Right Column: Biography -->
+            <div class="bio">
+                <h1>Hi, I'm Mordecai Ohemeng 👋</h1>
+                <p>
+                    I am a researcher and developer focused on <strong>Cyber-Physical Systems (CPS)</strong>, 
+                    control theory, and machine learning. My work centers on creating 
+                    resilient frameworks to protect critical infrastructure against 
+                    adversarial threats.
+                </p>
+                <p>
+                    Currently, I'm pursuing my research at the University of Idaho, 
+                    where I develop intelligent sensing frameworks and blockchain-augmented 
+                    control systems to mitigate FDI attacks and enhance system security.
+                </p>
+
+                <!-- Social Links with Icons -->
+                <div class="social-links">
+                    <a href="https://scholar.google.com/citations?user=ssnIf9MAAAAJ&hl=en" target="_blank" title="Google Scholar">
+                        <i class="ai ai-google-scholar"></i>
+                    </a>
+                    <a href="https://github.com/opoku-ohemeng" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/mordecai-opoku-ohemeng-2958a8b9" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:moohemeng@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Site Footer -->
+        <div class="footer">
+            &copy; 2026 Mordecai Ohemeng | University of Idaho | Built with GitHub Pages
         </div>
     </div>
 
