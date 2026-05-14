@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Mordecai Ohemeng</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; color: #333; margin: 0; background-color: #fff; }
+        nav { padding: 1.2rem 10%; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; }
+        nav a { text-decoration: none; color: #666; font-weight: 500; margin-left: 20px; }
+        .container { max-width: 900px; margin: 60px auto; padding: 0 30px; }
+        
+        h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .intro { color: #777; margin-bottom: 40px; }
+
+        .project-card {
+            border: 1px solid #eee;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        .tag {
+            background: #e7f3ff;
+            color: #007bff;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .project-card h3 { margin: 15px 0 10px 0; font-size: 1.4rem; }
+        .project-card p { color: #555; }
+        
+        .links { margin-top: 20px; }
+        .btn {
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        .btn-primary { background: #007bff; color: white; }
+        .btn-outline { border: 1px solid #ddd; color: #555; }
+        .btn-outline:hover { background: #f8f9fa; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" style="font-weight:700; color:#000;">Mordecai Ohemeng</a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html" style="color:#007bff;">Projects</a>
+            <a href="research.html">Research</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Technical Projects</h1>
+        <p class="intro">A collection of software implementations, simulations, and technical reports.</p>
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <span class="tag">Security Simulation</span>
+            <h3>Blockchain-Augmented Control Simulation</h3>
+            <p>A Python-based simulation demonstrating how decentralized ledgers can protect power grid control loops from False Data Injection (FDI) attacks. Includes spectral radius analysis of system stability.</p>
+            <div class="links">
+                <a href="https://github.com/opoku-ohemeng/your-repo-name" class="btn btn-outline" target="_blank">View Code on GitHub</a>
+                <a href="blockchain_report.pdf" class="btn btn-primary" target="_blank">Technical Report (PDF)</a>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+            <span class="tag">Machine Learning</span>
+            <h3>MHSA-LSTM Ransomware Detection Framework</h3>
+            <p>Implementation of a Multi-Head Self-Attention LSTM model for identifying early signs of ransomware activity within industrial network traffic.</p>
+            <div class="links">
+                <a href="ransomware_report.pdf" class="btn btn-primary" target="_blank">Project Documentation</a>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+            <span class="tag">Modeling</span>
+            <h3>Infectious Disease Poly-infection Model</h3>
+            <p>An ODE-based mathematical model and simulation exploring the interactions between COVID-19 and secondary infections.</p>
+            <div class="links">
+                <a href="modeling_poster.pdf" class="btn btn-outline" target="_blank">Poster Presentation</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
